@@ -22,4 +22,3 @@ class CatalogSpider(scrapy.Spider):
             'title': response.css('.product.full_name::text').extract_first('').strip(),
         }
         yield item
-#123
